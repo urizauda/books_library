@@ -3,9 +3,10 @@
 Link to app - https://books-library.onrender.com/
 
 
-My first React.js project, books library.
-Books Library is a book management app that gives you access to a 30 books catalog. 
-Using Books Library is fun and easy, allowing you to quickly find any book in your library, choose your favorite books, comment on a book, and keep track of your reading and completed books lists.
+My first React.js project, books library.<br>
+Books Library is a book management app that gives you access to a 30 books catalog.<br>
+Using Books Library is fun and easy, allowing you to quickly find any book in your library, <br>
+choose your favorite books, comment on a book, and keep track of your reading and completed books lists.
 
 
 ### Functionality:
