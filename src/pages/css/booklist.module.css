@@ -51,6 +51,11 @@ h3 {
     border-radius: 5px;
 }
 
+.searchContainer {
+    margin: 1rem;
+    margin-right: 3rem;
+}
+
 label {
     margin-left: 28%;
 }
@@ -62,7 +67,7 @@ button {
 }
 
 .addBtn {
-    margin-left: 110.2%;
+    /* margin-left: 110.2%; */
     margin-bottom: 5%;
     background-color: white;
 }
@@ -107,10 +112,10 @@ button {
 }
 
 .addComment {
-background-color: white;
-font-size: small;
-margin-left: 61%;
-margin-top: 1%;
+    background-color: white;
+    font-size: small;
+    margin-left: 61%;
+    margin-top: 1%;
 }
 
 .addComment:hover {
@@ -123,7 +128,38 @@ margin-top: 1%;
 }
 
 .texterea {
-    width: 800px ;
+    width: 800px;
     height: 30vh;
     margin-left: 15%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .img {
+        width: 80%;
+        margin: 2%;
+    }
+
+    h2, h3 {
+        margin: 0;
+    }
+
+    .addBtn {
+        margin-left: 117%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .img {
+    width: 10%;
+    }
+    .addBtn {
+        margin-left: 109.4%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .addBtn {
+        margin-left: 110.25%;
+    }
 }

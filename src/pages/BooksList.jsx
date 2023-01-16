@@ -10,8 +10,10 @@ export default function BooksList({ books, setBooks }) {
     let temp = [...books]
     return (
         <div>
-            <label><FaSistrix /> </label><input type="text" className={styles.search} placeholder='Search...'
-                onChange={(e) => setSearch(e.target.value)} />
+            <div className={styles.searchContainer}>
+                <label><FaSistrix /> </label><input type="text" className={styles.search} placeholder='Search...'
+                    onChange={(e) => setSearch(e.target.value)} />
+            </div>
             {temp
                 .filter(item => {
                     if (search == "") {
@@ -32,7 +34,7 @@ export default function BooksList({ books, setBooks }) {
                             <div className={styles.content}>
                                 <h2>{book.name}</h2>
                                 <h3 title='Author'>{book.author}</h3>
-                            <button className={styles.addBtn} title='Add to Reading List' onClick={() => { book.isReading = true; setBooks(temp); setMarkAsRead(true) }}><FaPlus size='10px' /></button>
+                                <button className={styles.addBtn} title='Add to Reading List' onClick={() => { book.isReading = true; setBooks(temp); setMarkAsRead(true) }}><FaPlus size='10px' /></button>
                                 {book.isReading}
                                 <p title='Description'>{book.description.slice(0, 250)}...</p>
                             </div>
