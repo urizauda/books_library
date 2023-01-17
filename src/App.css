@@ -59,6 +59,7 @@ form {
 input[type="password"], input[type="email"] {
   font-size: 18px;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 input[type="submit"] {
@@ -69,7 +70,7 @@ input[type="submit"] {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: .9em;
   margin: 5px;
   padding: 10px 15px;
@@ -77,4 +78,11 @@ input[type="submit"] {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+@media only screen and (max-width: 768px) {
+  .loginPlusRegister {
+    margin-left: 26%;
+    margin-top: 20%;
+  }
 }
