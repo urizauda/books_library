@@ -19,7 +19,7 @@ export default function Details({ books, setBooks, text, setText, details, setRa
                     <h3>{obj.author}</h3>
                     <p>{obj.description}</p>
                 </div>
-                <div>
+                <div className={styles.textAreaContainer}>
                 <textarea className={styles.texterea} placeholder='Add Note...' value={text} onChange={(e) => setText(e.target.value)} />
                 <button className={styles.addComment} title='Add Comment' onClick={() => { obj.comment.push(text); setBooks(temp) }}><FaPlus /></button>
                 {notes}

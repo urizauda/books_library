@@ -147,12 +147,28 @@ button {
     .addBtn {
         margin-left: 117%;
     }
+
+    .textAreaContainer {
+        width: 80%;
+        margin-left: 0%;
+    }
+
+    .texterea {
+        width: 66%;
+        height: 5vh;
+        margin-top: 7%;
+    }
+
+    .addComment {
+        margin-left: -4.5%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .img {
-    width: 10%;
+        width: 10%;
     }
+
     .addBtn {
         margin-left: 109.4%;
     }
